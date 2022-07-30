@@ -10,7 +10,10 @@ class QuizBrain:
         print(self.question_list[self.question_number].text)
 game_on = True
 quizbrain = QuizBrain(question_bank)
+print(quizbrain.question_list[0].text)
 while game_on:
-    quizbrain.next_question()
-    quizbrain.next_question()
-    game_on = False
+    user_answer = input('true or false')
+    if user_answer == quizbrain.question_list[quizbrain.question_number].answer:
+        quizbrain.next_question()
+    else:
+        game_on = False
