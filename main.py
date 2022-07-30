@@ -9,4 +9,4 @@ for x in question_data:
     new_quest = Question(q_text, q_answ)
     question_bank.append(new_quest)
 
-print(question_bank)
+# print(question_bank)
